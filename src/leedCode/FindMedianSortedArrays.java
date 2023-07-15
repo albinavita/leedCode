@@ -23,11 +23,12 @@ public class FindMedianSortedArrays {
         double mediana = 0.0;
         int[] nums1 = {1, 2};
         int[] nums2 = {3, 4 };
+       // int[] arr = ArrayUtils.addAll(nums1, nums2);
         int[] result = findMedianSortedArrays(nums1, nums2);
         int index = result.length / 2;
         System.out.println(result[index]);
         if (result.length % 2 == 0) {
-            mediana = (result[index - 1] + result[index]) / 2.0;
+            mediana = (result[index - 1] + result[index]) / 2.00000;
         } else {
             mediana = result[index];
         }
